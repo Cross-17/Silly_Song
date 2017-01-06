@@ -44,16 +44,14 @@
                                     <action selector="reset:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="c7G-pC-gUo"/>
                                 </connections>
                             </textField>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9gL-1H-3ig">
-                                <rect key="frame" x="79" y="138" width="240" height="128"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9gL-1H-3ig">
+                                <rect key="frame" x="67" y="140" width="240" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="240" placeholder="YES" id="95u-Cb-LVs"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="128" placeholder="YES" id="gwZ-Mt-tzb"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="240" placeholder="YES" id="pQK-qk-8iz"/>
-                                    <constraint firstAttribute="height" constant="128" placeholder="YES" id="yMu-HM-x2a"/>
+                                    <constraint firstAttribute="height" constant="128" id="6mo-YS-fGH"/>
+                                    <constraint firstAttribute="width" constant="240" id="SOC-vN-i94"/>
                                 </constraints>
-                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -62,16 +60,17 @@
                         <constraints>
                             <constraint firstItem="AvJ-S4-Du5" firstAttribute="top" secondItem="XI8-JW-h2g" secondAttribute="bottom" constant="8" id="5Yi-gs-TAm"/>
                             <constraint firstItem="AvJ-S4-Du5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6Bd-5M-y68"/>
+                            <constraint firstItem="9gL-1H-3ig" firstAttribute="top" secondItem="AvJ-S4-Du5" secondAttribute="bottom" constant="23" id="R1r-lO-ZeA"/>
                             <constraint firstItem="AvJ-S4-Du5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="70" id="U3c-Yu-U6u"/>
                             <constraint firstItem="XI8-JW-h2g" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="g4y-aa-pc6"/>
                             <constraint firstAttribute="trailingMargin" secondItem="AvJ-S4-Du5" secondAttribute="trailing" constant="71" id="hxd-xW-66O"/>
-                            <constraint firstItem="XI8-JW-h2g" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-8" id="lLe-w9-xqm"/>
+                            <constraint firstItem="9gL-1H-3ig" firstAttribute="centerX" secondItem="AvJ-S4-Du5" secondAttribute="centerX" id="m53-QV-XqG"/>
                             <constraint firstItem="XI8-JW-h2g" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-8" id="o0K-Bt-Cwn"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="lyricsView" destination="9gL-1H-3ig" id="6Tv-As-KmJ"/>
-                        <outlet property="nameField" destination="AvJ-S4-Du5" id="cWk-1g-6qj"/>
+                        <outlet property="lyricsView" destination="9gL-1H-3ig" id="vFN-dK-CHT"/>
+                        <outlet property="nameField" destination="AvJ-S4-Du5" id="4g8-Y8-qDF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
